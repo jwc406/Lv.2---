@@ -1,0 +1,112 @@
+/* nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+}
+
+.inputBox {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input {
+  height: 2rem;
+  margin: 0 1rem;
+  background: none;
+  padding: 1.2rem 1rem;
+  border: none;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+input:focus {
+  outline-style: none;
+  border-bottom: 2px solid #84fab0;
+}
+
+button {
+  width: 6rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 1.2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+nav button {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+nav button:active {
+  background-image: linear-gradient(120deg, #8fd3f4 0%, #84fab0 100%);
+}
+
+main {
+  width: 100%;
+  padding: 0 3rem;
+  padding-bottom: 2rem;
+}
+
+main > p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+main > div {
+  width: 100%;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(max-content, 1fr));
+}
+
+.todoBox {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: linear-gradient(145deg, #f1f1f1, #ffffff);
+  box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
+  padding: 2rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.todoBox p {
+  margin: 0;
+}
+
+.todoBox p:first-child {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.buttons {
+  display: flex;
+  justify-content: stretch;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.buttons button {
+  flex: 1;
+  color: white;
+}
+
+.buttons button:first-child {
+  background: linear-gradient(145deg, #ff7a7a, #e64e4e);
+}
+
+.buttons button:first-child:active {
+  background: linear-gradient(145deg, #e64e4e, #ff5d5d);
+}
+
+.buttons button:last-child {
+  background: linear-gradient(145deg, #829dff, #4e6ce6);
+}
+
+.buttons button:last-child:active {
+  background: linear-gradient(145deg, #4661cf, #5374f6);
+} */
