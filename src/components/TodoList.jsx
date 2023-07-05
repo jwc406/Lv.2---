@@ -1,10 +1,10 @@
 import Todo from "./Todo";
-import ReduxContainer from "./ReduxContainer";
+import { useSelector } from "react-redux";
 
 import { Main, MainContent } from "./../styles/StComponents";
 
 function TodoList({ isDone }) {
-  const { todos } = ReduxContainer();
+  const { todos } = useSelector((state) => state.todos);
 
   const filteredTodos = todos.filter((todo) => todo.isDone === isDone);
 

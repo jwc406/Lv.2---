@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTodo } from "../redux/modules/todos";
 
-import { Nav, InputBox, Input, AddButton } from "./../styles/StComponents";
+import * as SF from "./../styles/StComponents";
 
 function TodoForm() {
-  const dispatch = useDispatch();
-
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
@@ -19,6 +17,8 @@ function TodoForm() {
     const newContent = event.target.value;
     setContent(newContent);
   };
+
+  const dispatch = useDispatch();
 
   const clickAddButtonHandler = () => {
     const newTodo = {
@@ -37,23 +37,23 @@ function TodoForm() {
   };
 
   return (
-    <Nav>
-      <InputBox className="inputBox">
+    <SF.Nav>
+      <SF.InputBox className="inputBox">
         <div>
           <span>제목</span>
-          <Input type="text" onChange={onTitleChangeHandler} value={title} />
+          <SF.Input type="text" onChange={onTitleChangeHandler} value={title} />
         </div>
         <div>
           <span>내용</span>
-          <Input
+          <SF.Input
             type="text"
             onChange={onContentChangeHandler}
             value={content}
           />
         </div>
-      </InputBox>
-      <AddButton onClick={clickAddButtonHandler}>추가하기</AddButton>
-    </Nav>
+      </SF.InputBox>
+      <SF.AddButton onClick={clickAddButtonHandler}>추가하기</SF.AddButton>
+    </SF.Nav>
   );
 }
 
